@@ -1,0 +1,144 @@
+/* ClaimTracking.css */
+
+/* Container styling */
+.claim_container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+.claim_title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+}
+
+.claim_subtitle {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+/* Progress bar */
+.status_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.status_step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.status_circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.status_circle.active {
+  background-color: #2563eb;
+}
+
+.status_circle.inactive {
+  background-color: #d1d5db;
+}
+
+.status_label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.status_label.active {
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+/* Claim details */
+.claim_details {
+  background-color: #eff6ff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.claim_details h3 {
+  color: #1e40af;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.claim_details p {
+  margin: 3px 0;
+  color: #374151;
+}
+
+/* Upload section */
+.upload_section {
+  background-color: #fefce8;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.upload_section h4 {
+  color: #92400e;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.upload_section p {
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.upload_section input[type="file"] {
+  display: block;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+.upload_btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.upload_btn:hover {
+  background-color: #1e40af;
+}
+
+/* Final message */
+.final_message {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.final_message.success {
+  color: #166534;
+  font-weight: 600;
+}
+
+.final_message.pending {
+  color: #4b5563;
+}

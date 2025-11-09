@@ -1,0 +1,68 @@
+
+// AuthContext.js
+import React, { createContext, useState, useContext, useEffect } from "react";
+
+const AuthContext = createContext();
+
+export const useAuth = () => {
+  return useContext(AuthContext);
+};
+
+export const AuthProvider = ({ children }) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(null);
+  const [userData, setUserData] = useState({})
+
+  const login = async (email, password) => {
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("/api/user/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message);
+      } else {
+        const { user ,token } = data;
+        console.log(data)
+        
+        setUserData(user)
+        
+        localStorage.setItem("token", token);
+        setIsAuthenticated(true);
+      }
+    } catch (error) {
+      throw new Error(error.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  useEffect(() =>console.log(userData), [userData] )
+
+  
+
+  const logout = () => {
+    localStorage.removeItem("token");
+    setIsAuthenticated(false);
+  };
+
+  const authContextValue = {
+    isAuthenticated,
+    isLoading,
+    userData,
+    login,
+    logout,
+  };
+
+  return (
+    <AuthContext.Provider value={authContextValue}>
+      {children}
+    </AuthContext.Provider>
+  );
+};

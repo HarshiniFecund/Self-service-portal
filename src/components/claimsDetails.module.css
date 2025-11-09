@@ -1,0 +1,116 @@
+.claim_list_container {
+  padding: 20px;
+  text-align: center;
+}
+
+.claim_table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.claim_table th, .claim_table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: center;
+}
+
+.claim_table tr:hover {
+  background-color: #f2f7ff;
+  cursor: pointer;
+}
+
+.claim_link {
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.claim_details_container {
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.back_btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.tabs button {
+  background: #007bff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+}
+
+.tabs button.active {
+  background: #007bff;
+  color: white;
+}
+
+.tab_content {
+  background: #f8faff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.bill_breakdown_container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  margin: 20px 0;
+}
+
+.section_title {
+  color: #1e3a8a;
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  border-left: 4px solid #1e3a8a;
+  padding-left: 8px;
+}
+
+.bill_table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.bill_table th,
+.bill_table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.bill_table th {
+  background-color: #f3f4f6;
+  color: #374151;
+  font-weight: 600;
+}
+
+.bill_table tr:hover {
+  background-color: #f9fafb;
+}
+
+.total_row td {
+  border-top: 2px solid #1e3a8a;
+  font-weight: 600;
+  color: #1e3a8a;
+}

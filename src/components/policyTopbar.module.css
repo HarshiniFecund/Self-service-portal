@@ -1,0 +1,54 @@
+.topbar {
+  background: #2563eb;
+  color: white;
+  padding: 0px 700px;
+  display: flex;
+  text-align: left;
+  margin-bottom:0%;
+  gap: 135%;
+  padding-left: 1%;
+  justify-content: space-between; /* spreads logo left, menu right */
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+  white-space: nowrap;   /* prevents wrapping */
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-weight: bold;
+
+}
+  
+.menu li {
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: #ffffff;
+}
+
+.logout{
+   margin-right: 0px;
+}
+
+.nav_link {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* inherits white/black text color */
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav_link:hover {
+  color: #ffffff;          /* highlight color */
+}

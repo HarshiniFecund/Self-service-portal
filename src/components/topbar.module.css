@@ -1,0 +1,55 @@
+.topbar {
+  background: #2563eb;
+  color: white;
+  padding: 1px 700px;
+  display: flex;
+  justify-content: space-between; /* spreads logo left, menu right */
+  align-items: left;
+  margin-bottom: 0%;
+  gap: 400px;
+  padding-right: 2%;
+  padding-left: 1%;
+}
+
+.logo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-top: 15px;
+  white-space: nowrap;   /* prevents wrapping */
+  justify-content: center; 
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  font-weight: bold;
+
+}
+  
+.menu li {
+  cursor: pointer;
+}
+
+.menu li:hover {
+  color: #ffffff;
+}
+
+.logout{
+   margin-right: 0px;
+}
+
+.nav_link {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* inherits white/black text color */
+  font-weight: 500;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.nav_link:hover {
+  color: #ffffff;          /* highlight color */
+}
